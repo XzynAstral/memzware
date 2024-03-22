@@ -1,7 +1,7 @@
 --version 1.7 last updated on 13-1-2023
 
 --Defining the ui library
-local Rayfield = loadstring(readfile('MemzWare/Assets/UiLib.lua'))()
+local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/XzynAstral/memzware/main/Memzware/Assets/UiLib.lua"))()
 
 local Window = Rayfield:CreateWindow({
 	Name = "MemzWare | 1.7",
@@ -40,7 +40,7 @@ Notification.new("info", "Disabling", "Disabling anticheat dont move.") -- Args(
 Notification.new("warning", "YOu died", "Imagine dying bozo.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
 Notification.new("message", "Message Heading", "Message body message.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
 ]]
-local Notification = loadstring(readfile('MemzWare/Assets/Notifs.lua'))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/XzynAstral/memzware/main/Memzware/Assets/Notifs.lua"))()
 
 --end of notifications
 
@@ -226,7 +226,7 @@ end
 --end of functions
 
 --arraylist defining
-local array = loadstring(readfile('MemzWare/Assets/ArrayList.lua'))()
+local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/XzynAstral/memzware/main/Memzware/Assets/ArrayList.lua"))()
 shared["CometConfigs"] = {
     Enabled = true
 }
@@ -1005,7 +1005,7 @@ do
                     end
                     shared.con:Disconnect()
                 end)
-                loadstring(readfile('MemzWare/Assets/Textures.lua'))()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/XzynAstral/memzware/main/Memzware/Assets/Textures.lua'))()
             else
                 array.remove("TexturePack")
                 disabled("TexturePack", 2)
